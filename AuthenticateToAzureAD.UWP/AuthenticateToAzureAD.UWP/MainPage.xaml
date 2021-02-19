@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="AuthenticateToAzureAD.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AuthenticateToAzureAD.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	
+    <StackPanel>
+		<Button x:Name="btnSignIn" 
+				Content="SignIn to Azure AD (Azure Active Directory)" 
+				Visibility="Visible"
+				Click="btnSignIn_Click" />
+
+		<Button x:Name="btnSignOut" 
+				Content="SignOut" 
+				Visibility="Collapsed"
+				Click="btnSignOut_Click" />
+
+		<TextBlock x:Name="textblockResultText" Height="200" />
+	</StackPanel>
+</Page>
